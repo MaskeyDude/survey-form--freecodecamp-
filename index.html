@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- style -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- title and description -->
+    <h1 id="title">Healthy Bites Cafe!</h1>
+    <p id="description">Lil bites fullfilling your cravings, keeping you full for a longer time while also being
+        healthy!</p>
+
+    <!-- information about form -->
+    <h5>Please fill out this form to register as a customer and book your reservation!</h5>
+    <p>You'll only have to register once</p>
+
+    <!-- form -->
+    <form action="" id="survey-form">
+
+        <!-- name -->
+        <div class="styling">
+            <label for="name" id="name-label">Name</label>
+            <input type="text" id="name" placeholder="Your Name" required>
+        </div>
+
+        <!-- email -->
+        <div class="styling">
+            <label for="email" id="email-label">Email</label>
+            <input type="email" id="email" placeholder="Your Email" required>
+        </div>
+
+        <!-- number -->
+        <div class="styling">
+            <label for="number" id="number-label">Time for reservation? (6 - 11 PM)</label>
+            <input type="number" id="number" min=6 max=11 placeholder="" required>
+        </div>
+
+        <!-- radio options -->
+        <div class="styling">
+            <label for="radio" id="radio">Table for how many individuals?</label>
+            <br>
+            <input type="radio" name="option-one" id="">
+            <label for="option-one" class="radio-btns">One</label>
+            <br>
+            <input type="radio" name="option-one" id="">
+            <label for="option-one" class="radio-btns">Two</label>
+        </div>
+
+        <!-- checkboxes -->
+        <div class="styling">
+            <label for="type" id="checkbox">Kdjs;l</label>
+            <br>
+            <input type="checkbox" name="type-one" value="Drawing" id="">
+            <label for="">A</label>
+            <br>
+            <input type="checkbox" name="type-two" value="Writing" id="">
+            <label for="">B</label>
+        </div>
+
+        <!-- drop-down -->
+        <div class="styling">
+            <label for="drop-down" id="drop-down">What kind of mystery snack box would you like?
+                <span class="extra-txt">(At no additional cost for first time customers only!)</span></label>
+            <br>
+            <select name="drop-down" id="drop-down" required>
+                <option disabled selected value="">Select...</option>
+                <option value="Salty">Salty Snacks</option>
+                <option value="Sweet">Sweet Snacks</option>
+                <option value="Both">Mixture of Sweet & Salty Snacks</option>
+
+            </select>
+        </div>
+
+        <!-- text area -->
+        <div class="styling">
+            <label for="extra-requests" id="text-area">Do you have any allergies or specific foods you may want to avoid
+                in your mystery snack box?</label>
+            <br>
+            <textarea name="extra-requests"
+                placeholder="I'm allergic to peanuts | I don't like things related to seafoods"
+                id="text-area"></textarea>
+        </div>
+
+        <!-- submit btn -->
+        <button type="submit">Register!</button>
+
+    </form>
+
+</body>
+
+</html>
