@@ -12,14 +12,18 @@
 <body>
 
     <!-- title and description -->
-    <h1 id="title">Healthy Bites Cafe!</h1>
-    <p id="description">Lil bites fullfilling your cravings, keeping you full for a
-        longer time while also being healthy!
-    </p>
+    <div>
+        <h1 id="title">Healthy Bites Cafe!</h1>
+        <p id="description">Lil bites fullfilling your cravings, keeping you full for a
+            longer time while also being healthy!
+        </p>
+    </div>
 
     <!-- information about form -->
-    <h5>Please fill out this form to register as a customer and book your reservation!</h5>
-    <p>You'll only have to register once</p>
+    <div class="info">
+        <h5>Please fill out this form to register as a customer and book your reservation!</h5>
+        <p>You'll only have to register once</p>
+    </div>
 
     <!-- form -->
     <form action="" id="survey-form">
@@ -27,13 +31,13 @@
         <!-- name -->
         <div class="styling">
             <label for="name" id="name-label">Name</label>
-            <input type="text" id="name" placeholder="Your Name" required>
+    <br>    <input type="text" id="name" placeholder="Your Name" required>
         </div>
 
         <!-- email -->
         <div class="styling">
             <label for="email" id="email-label">Email</label>
-            <input type="email" id="email" placeholder="Your Email" required>
+    <br>    <input type="email" id="email" placeholder="Your Email" required>
         </div>
 
         <!-- number -->
@@ -69,7 +73,7 @@
             <label for="drop-down" id="drop-down">What kind of mystery snack box would you like?
                 <span class="extra-txt">(At no additional cost for first time customers only!)</span></label>
             <br>
-            <select name="drop-down" id="drop-down" required>
+            <select name="drop-down" id="drop-down-menu" required>
                 <option disabled selected value="">Select...</option>
                 <option value="Salty">Salty Snacks</option>
                 <option value="Sweet">Sweet Snacks</option>
