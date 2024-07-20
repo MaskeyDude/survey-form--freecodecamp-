@@ -30,56 +30,95 @@
 
         <!-- name -->
         <div class="styling">
-            <label for="name" id="name-label">Name</label>
-    <br>    <input type="text" id="name" placeholder="Your Name" required>
+            <label for="name" id="name-label">Name:</label>
+            <br> <input type="text" id="name" placeholder="Your Name" required>
         </div>
+
 
         <!-- email -->
         <div class="styling">
-            <label for="email" id="email-label">Email</label>
-    <br>    <input type="email" id="email" placeholder="Your Email" required>
+            <label for="email" id="email-label">Email:</label>
+            <br> <input type="email" id="email" placeholder="Your Email" required>
         </div>
 
         <!-- number -->
         <div class="styling">
-            <label for="number" id="number-label">Time for reservation? (6 - 11 PM Only)</label>
-    <br>    <input type="number" id="number" min=6 max=11 placeholder="" required>
+            <label for="number" id="number-label">
+                Phone No.
+            </label>
+            <br> <input type="number" id="number" min=8 max=15 placeholder="+966" required>
+        </div>
+
+        <!-- date -->
+        <div class="styling">
+            <label for="date">Date of Reservation</label>
+            <br> <input type="date" min="2024-07-01" max="2024-12-31" id="date">
+            <p class="extra-txt">( Available: Current Date - End of Year )</p>
+
+        </div>
+
+
+        <!-- time -->
+        <div class="styling">
+            <label for="time" id="time-label">Time of Reservation:</label>
+            <br> <input type="time" min=6:00 max=11:00 id="time">
+            <p class="extra-txt">( 6:00 PM - 11:00 PM Only )</p>
         </div>
 
         <!-- radio options -->
         <div class="styling">
             <label for="radio" id="radio">Table for how many individuals?</label>
             <br>
-            <input type="radio" name="option-one" id="">
-            <label for="option-one" class="radio-btns">One</label>
-           
-            <input type="radio" name="option-one" id="">
-            <label for="option-one" class="radio-btns">Two</label>
+            <div class="radios">
+                <input type="radio" name="option-one">
+                <label for="option-one" class="radio-btns">One</label>
+            </div>
+
+            <div class="radios">
+                <input type="radio" name="option-one">
+                <label for="option-two" class="radio-btns">Two</label>
+            </div>
+
+            <div class="radios">
+                <input type="radio" name="option-one">
+                <label for="option-four" class="radio-btns">Four</label>
+            </div>
         </div>
 
         <!-- checkboxes -->
         <div class="styling">
-            <label for="type" id="checkbox">Kdjs;l</label>
+            <label for="type" id="checkbox">Any seating prefrences?</label>
             <br>
-            <input type="checkbox" name="type-one" value="Drawing" id="">
-            <label for="">A</label>
+            <div class="boxes">
+                <input type="checkbox" name="type-two" value="sofa">
+                <label for="">Sofa Seat</label>
+            </div>
+            <br>
+            <div class="boxes">
+                <input type="checkbox" name="type-two" value="window">
+                <label for="">A Private Window Area</label>
+            </div>
+            <br>
+            <div class="boxes">
+                <input type="checkbox" name="type-one" value="cozy">
+                <label for="">Custom Table Cloth</label>
+            </div>
 
-            <input type="checkbox" name="type-two" value="Writing" id="">
-            <label for="">B</label>
+            <p class="extra-txt">( Costs Extra, Can be canceled on request )</p>
+
         </div>
 
         <!-- drop-down -->
         <div class="styling">
-            <label for="drop-down" id="drop-down">What kind of mystery snack box would you like?
-                <span class="extra-txt">(At no additional cost for first time customers only!)</span></label>
+            <label for="drop-down" id="drop-down">What kind of mystery snack box would you like?</label>
             <br>
             <select name="drop-down" id="drop-down-menu" required>
                 <option disabled selected value="">Select...</option>
                 <option value="Salty">Salty Snacks</option>
                 <option value="Sweet">Sweet Snacks</option>
                 <option value="Both">Mixture of Sweet & Salty Snacks</option>
-
             </select>
+            <p class="extra-txt">( Free of cost for our first time customers! )</p>
         </div>
 
         <!-- text area -->
@@ -87,8 +126,7 @@
             <label for="extra-requests" id="text-area">Do you have any allergies or specific foods you may want to avoid
                 in your mystery snack box?</label>
             <br>
-            <textarea name="extra-requests"
-                placeholder="I'm allergic to peanuts | I don't like things related to seafoods"
+            <textarea name="extra-requests" placeholder="Peanut Allergy, Gluten Free, No seaseme seeds, ..."
                 id="text-area"></textarea>
         </div>
 

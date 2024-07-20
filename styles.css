@@ -39,23 +39,83 @@ body {
 }
 
 .styling {
-    margin: 0.6em auto; 
+    margin: 1em auto; 
 }
 
-input:nth-of-type(text) {
+.number-label {
+
 }
 
-#name, #email, #number {
+.extra-txt {
+    font-size: 0.6em;
+    text-align: end;
+    color: rgba(255, 255, 255, 0.3);
+    transition: 0.4s;
+}
+
+.extra-txt:hover {
+    cursor: help;
+    color: #fff;
+}
+
+#name, #email, #number, #date, #time, #drop-down-menu, textarea {
     margin: 0.6em 0;
     padding: 0.6em 0.4em;
     width: 100%;
     font-size: 0.7em;
+    color: #000;
+    background-color: #fff;
     border: 1px solid #fff;
     border-radius: 4px;
 }
 
-#radio, #checkbox {
+label {
+}
 
+
+#radio, #checkbox {
+    margin-bottom: 1em;
+}
+
+.radios, .boxes {
+    display: inline;
+    margin: 0 0.4em 0 0.2em;
+}
+
+.radios input {
+    margin: 0 0.2em;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    /* customizing */
+    width: 1.1em;
+    height: 1.1em;
+    box-shadow: 0 0 0 1px #fff;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+
+.radios input:checked {
+    background-color: #fff;
+}
+
+.boxes input {
+    margin: 0 0.1em;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    /* customizing */
+    width: 1.1em;
+    height: 1.1em;
+    box-shadow: 0 0 0 1px #fff;
+    border: 1px solid #fff;
+    border-radius: 2px;
+}
+
+.boxes input:checked {
+    background-color: #fff;
 }
 
 #drop-down {
@@ -76,6 +136,7 @@ textarea {
 }
 
 .submit-btn {
+    display: block;
     margin: 1em auto;
     padding: 0.4em 0.6em;
     text-align: center;
