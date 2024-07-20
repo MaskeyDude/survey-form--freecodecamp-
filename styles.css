@@ -1,31 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+/* font-family: "Great Vibes", cursive; */
+
+@import url('https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&display=swap');
+/* font-family: "Afacad", sans-serif; */
+
 * {
     margin: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif
 }
 
 body {
+    font-family: "Afacad", sans-serif;
+    background-color: #1d130e;
+}
+
+::selection {
+    color: #fff;
+    background-color: #000;
+}
+
+.main-info {
+    text-align: center;
+    padding: 0 2em;
+    margin: 2em 6em;
 }
 
 #title {
-    text-align: center;
+    font-family: "Great Vibes", cursive;
+    font-size: 2.6em;
+    color: #ffefe1;
 }
+
 
 #description {
-
-}
-
-
-.info {
-
-}
-
-.info h5 {
-
-}
-
-.info p {
-
+    font-size: 0.8em;
+    margin: 0.4em 0;
+    color: rgba(255, 239, 225, 0.8);
 }
 
 #survey-form {
@@ -33,23 +43,41 @@ body {
     margin: 1em auto;
     padding: 0.6em 1em;
     font-size: 1.4em;
-    border-radius: 6px;
-    color: white;
-    background-color: black
+    border-radius: 0.6em;
+    box-shadow: 1px 1px 7px 1px rgba(17, 7, 0, 0.4);
+    color: #ffefe1;
+    background-color: #41251a;
+}
+
+.info {
+    margin: 0.6em 0;
+    text-align: center;
+    font-family: "Great Vibes", cursive;
+}
+
+.info h2 {
+    font-size: 2em;
+    letter-spacing: 2px;
+}
+
+
+.info p {
+    font-size: 0.9em;
+    letter-spacing: 1px;
+    text-align: center;
 }
 
 .styling {
-    margin: 1em auto; 
+    margin: 1em auto;
 }
 
-.number-label {
-
-}
+.number-label {}
 
 .extra-txt {
     font-size: 0.6em;
     text-align: end;
-    color: rgba(255, 255, 255, 0.3);
+    color: rgba(255, 239, 225, 0.3);
+    /* color: rgba(255, 255, 255, 0.3); */
     transition: 0.4s;
 }
 
@@ -58,26 +86,33 @@ body {
     color: #fff;
 }
 
-#name, #email, #number, #date, #time, #drop-down-menu, textarea {
+#name,
+#email,
+#number,
+#date,
+#time,
+#drop-down-menu,
+textarea {
     margin: 0.6em 0;
     padding: 0.6em 0.4em;
     width: 100%;
     font-size: 0.7em;
     color: #000;
-    background-color: #fff;
-    border: 1px solid #fff;
+    background-color: #ffefe1;
+    border: 1px solid #ffefe1;
     border-radius: 4px;
 }
 
-label {
-}
+label {}
 
 
-#radio, #checkbox {
+#radio,
+#checkbox {
     margin-bottom: 1em;
 }
 
-.radios, .boxes {
+.radios,
+.boxes {
     display: inline;
     margin: 0 0.4em 0 0.2em;
 }
@@ -91,13 +126,13 @@ label {
     /* customizing */
     width: 1.1em;
     height: 1.1em;
-    box-shadow: 0 0 0 1px #fff;
-    border: 1px solid #fff;
+    box-shadow: 0 0 0 1px #ffefe1;
+    border: 1px solid #ffefe1;
     border-radius: 50%;
 }
 
 .radios input:checked {
-    background-color: #fff;
+    background-color: #ffefe1;
 }
 
 .boxes input {
@@ -109,93 +144,63 @@ label {
     /* customizing */
     width: 1.1em;
     height: 1.1em;
-    box-shadow: 0 0 0 1px #fff;
-    border: 1px solid #fff;
+    box-shadow: 0 0 0 1px #ffefe1;
+    border: 1px solid #ffefe1;
     border-radius: 2px;
 }
 
 .boxes input:checked {
-    background-color: #fff;
+    background-color: #ffefe1;
 }
 
-#drop-down {
-
+.boxes label {
+    padding-left: 0.4em;
 }
 
+#dropdown {}
 
-#drop-down-menu {
+#dropdown-menu {}
 
-}
+#text-area {}
 
-#text-area {
+textarea {}
 
-}
-
-textarea {
-
-}
-
-.submit-btn {
+#submit {
     display: block;
     margin: 1em auto;
     padding: 0.4em 0.6em;
     text-align: center;
-    font-family: "Unica One", sans-serif;
-    /* font-family: "Arsenal SC", sans-serif;  */
     font-size: 1.2em;
-    border: 1px white solid;
-    border-radius: 4px;
-    color: white;
-    background-color: black;
+    border: 1px #1d130e solid;
+    border-radius: 6px;
+    color: #8f6957;
+    background-color: #1d130e;
     transition: 0.4s;
 }
 
-.submit-btn:hover {
+#submit:hover {
     cursor: pointer;
     font-weight: bold;
     letter-spacing: 2px;
-    color: black;
-    background-color: white
+    border: 1px #41251a solid;
+    color: #41251a;
+    background-color: #ffefe1;
 }
 
+@media (max-width:640px) {
 
+    .main-info {
+        text-align: center;
+        padding: 0 0.6em;
+        margin: 2em 0.6em;
+    }
 
+    .info h2 {
+        font-size: 1.7em;
+    }
 
+    .extra-txt {
+        text-align: center;
+    }
 
-
-
-
-
-
-/* fonts */
-
-@import url('https://fonts.googleapis.com/css2?family=Playwrite+AU+QLD:wght@100..400&display=swap');
-/* font-family: "Playwrite AU QLD", cursive; */
-
-/* unico one */
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Unica+One&display=swap');
-/* font-family: "Unica One", sans-serif; */
-
-/* dancing script */
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
-/* font-family: "Dancing Script", cursive; */
-
-/* noto serif balinese */
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Balinese&display=swap');
-/* font-family: "Noto Serif Balinese", serif; */
-
-@import url('https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-/* font-family: "Arsenal SC", sans-serif; */
-
-@import url('https://fonts.googleapis.com/css2?family=Beiruti:wght@200..900&display=swap');
-/* font-family: "Beiruti", sans-serif; */
-
-@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
-/* font-family: "Abel", sans-serif; */
-
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wdth,wght@50..200,200..900&display=swap');
-/* font-family: "Inconsolata", monospace;
-font-optical-sizing: auto; */
-
-@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-/* font-family: "Courier Prime", monospace; */
+}
